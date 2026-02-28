@@ -1,19 +1,13 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+node_modules/
 
-# testing
-/coverage
+# build output (vite builds to project root for EpixNet serving)
+/assets/
+/index.html
+/xID.png
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# old build output
+/dist/
 
 # misc
 .DS_Store
@@ -24,13 +18,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# env files
 .env*.local
 .env
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
-next-env.d.ts

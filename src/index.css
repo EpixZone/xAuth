@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Stripe-inspired theme tokens.
+ * Dark by default; .light on <html> flips to light palette.
+ * Components use custom utility classes (bg-card, text-primary, etc.)
+ * instead of hardcoded gray-* values.
+ */
+
+@layer base {
+  /* -- Dark (default) --------------------------------------------------- */
+  :root {
+    --color-page-bg: #0a0a0b;
+    --color-card-bg: #141417;
+    --color-input-bg: #1c1c21;
+    --color-border: #27272a;
+    --color-border-subtle: #1e1e22;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #a1a1aa;
+    --color-text-tertiary: #71717a;
+    --color-accent: #6366f1;
+    --color-accent-hover: #818cf8;
+    --color-accent-subtle: rgba(99, 102, 241, 0.1);
+    --color-hover-bg: #1c1c21;
+    --color-table-header-bg: #141417;
+    --color-badge-green-bg: rgba(34, 197, 94, 0.1);
+    --color-badge-green-text: #4ade80;
+    --color-badge-red-bg: rgba(239, 68, 68, 0.1);
+    --color-badge-red-text: #f87171;
+    --color-badge-amber-bg: rgba(245, 158, 11, 0.1);
+    --color-badge-amber-text: #fbbf24;
+    --color-success-bg: rgba(34, 197, 94, 0.1);
+    --color-success-text: #4ade80;
+    --color-error-bg: rgba(239, 68, 68, 0.1);
+    --color-error-text: #f87171;
+    --color-warning-text: #fbbf24;
+  }
+
+  /* -- Light ------------------------------------------------------------ */
+  .light {
+    --color-page-bg: #fafafa;
+    --color-card-bg: #ffffff;
+    --color-input-bg: #f4f4f5;
+    --color-border: #e4e4e7;
+    --color-border-subtle: #f0f0f2;
+    --color-text-primary: #18181b;
+    --color-text-secondary: #71717a;
+    --color-text-tertiary: #a1a1aa;
+    --color-accent: #4f46e5;
+    --color-accent-hover: #4338ca;
+    --color-accent-subtle: rgba(79, 70, 229, 0.06);
+    --color-hover-bg: #f4f4f5;
+    --color-table-header-bg: #fafafa;
+    --color-badge-green-bg: #f0fdf4;
+    --color-badge-green-text: #15803d;
+    --color-badge-red-bg: #fef2f2;
+    --color-badge-red-text: #b91c1c;
+    --color-badge-amber-bg: #fffbeb;
+    --color-badge-amber-text: #b45309;
+    --color-success-bg: #f0fdf4;
+    --color-success-text: #15803d;
+    --color-error-bg: #fef2f2;
+    --color-error-text: #b91c1c;
+    --color-warning-text: #b45309;
+
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--color-page-bg);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* -- Theme-aware utility classes ---------------------------------------- */
+
+@layer utilities {
+  .bg-page { background-color: var(--color-page-bg); }
+  .bg-card { background-color: var(--color-card-bg); }
+  .bg-input { background-color: var(--color-input-bg); }
+  .bg-hover { background-color: var(--color-hover-bg); }
+  .bg-accent-subtle { background-color: var(--color-accent-subtle); }
+  .bg-table-header { background-color: var(--color-table-header-bg); }
+
+  .border-default { border-color: var(--color-border); }
+  .border-subtle { border-color: var(--color-border-subtle); }
+
+  .text-primary { color: var(--color-text-primary); }
+  .text-secondary { color: var(--color-text-secondary); }
+  .text-tertiary { color: var(--color-text-tertiary); }
+  .text-accent { color: var(--color-accent); }
+
+  .bg-badge-green { background-color: var(--color-badge-green-bg); }
+  .text-badge-green { color: var(--color-badge-green-text); }
+  .bg-badge-red { background-color: var(--color-badge-red-bg); }
+  .text-badge-red { color: var(--color-badge-red-text); }
+  .bg-badge-amber { background-color: var(--color-badge-amber-bg); }
+  .text-badge-amber { color: var(--color-badge-amber-text); }
+
+  .bg-success { background-color: var(--color-success-bg); }
+  .text-success { color: var(--color-success-text); }
+  .bg-error { background-color: var(--color-error-bg); }
+  .text-error { color: var(--color-error-text); }
+  .text-warning { color: var(--color-warning-text); }
+}
