@@ -15,6 +15,8 @@ interface EpixNetState {
   rpcUrl: string | null;
   /** Cosmos REST API URL override, or null for default. */
   restApi: string;
+  /** The visiting user's EpixNet auth address (Bitcoin-style public key address). */
+  authAddress: string | null;
   /** True once EpixNet settings have been loaded (or immediately if not embedded). */
   ready: boolean;
 }
@@ -24,6 +26,7 @@ const defaults: EpixNetState = {
   language: "en",
   rpcUrl: null,
   restApi: REST_API,
+  authAddress: null,
   ready: false,
 };
 
@@ -40,6 +43,11 @@ export function useEpixNet() {
 /** Shortcut: returns the REST API base URL (from EpixNet config or default). */
 export function useRestApi() {
   return useContext(EpixNetContext).restApi;
+}
+
+/** Shortcut: returns the visiting user's EpixNet auth address, or null. */
+export function useAuthAddress() {
+  return useContext(EpixNetContext).authAddress;
 }
 
 // ---------------------------------------------------------------------------
@@ -61,7 +69,8 @@ export function EpixNetProvider({ children }: { children: ReactNode }) {
     Promise.all([
       epixFrame.getServerInfo().catch(() => null),
       epixFrame.getConfigList().catch(() => null),
-    ]).then(([serverInfo, configList]) => {
+      epixFrame.getSiteInfo().catch(() => null),
+    ]).then(([serverInfo, configList, siteInfo]) => {
       if (cancelled) return;
 
       // -- Theme ----------------------------------------------------------
@@ -95,7 +104,10 @@ export function EpixNetProvider({ children }: { children: ReactNode }) {
         }
       }
 
-      setState({ theme, language, rpcUrl, restApi, ready: true });
+      // -- Auth Address ---------------------------------------------------
+      const authAddress = siteInfo?.auth_address || null;
+
+      setState({ theme, language, rpcUrl, restApi, authAddress, ready: true });
     });
 
     return () => {

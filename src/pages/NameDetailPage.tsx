@@ -12,7 +12,7 @@ import {
 } from "../hooks/useXid";
 import { XID_ADDRESS, XID_ABI, DNS_RECORD_TYPES } from "../config/contract";
 import { DEFAULT_TLD, epixTestnet } from "../config/chain";
-import { useRestApi } from "../contexts/EpixNetContext";
+import { useRestApi, useAuthAddress } from "../contexts/EpixNetContext";
 import { truncateAddress } from "../config/bech32";
 
 interface DnsRecord {
@@ -30,6 +30,7 @@ export default function NameDetailPage() {
   const { root, updatedAt } = useContentRoot(name, tld);
   const { primaryName: pName, primaryTld: pTld, refetch: refetchPrimary } = usePrimaryName(address);
   const primaryWriter = useXidWrite();
+  const authAddress = useAuthAddress();
 
   const isOwner = address && owner && address.toLowerCase() === owner.toLowerCase();
   const isPrimary = pName === name && pTld === tld;
@@ -114,6 +115,7 @@ export default function NameDetailPage() {
         peersLoading={peersLoading}
         contentRoot={root}
         contentRootUpdatedAt={updatedAt}
+        visitorAuthAddress={authAddress}
         onPeersChanged={() => { refetchPeers(); }}
       />
 
@@ -250,19 +252,25 @@ function ProfileSection({
 /* ── EpixNet Peers Section ────────────────────────────────────────── */
 
 function EpixNetPeersSection({
-  name, tld, isOwner, peers, peersLoading, contentRoot, contentRootUpdatedAt, onPeersChanged,
+  name, tld, isOwner, peers, peersLoading, contentRoot, contentRootUpdatedAt, visitorAuthAddress, onPeersChanged,
 }: {
   name: string; tld: string; isOwner: boolean;
   peers: { address: string; label: string; addedAt: bigint; active: boolean; revokedAt: bigint }[];
   peersLoading: boolean;
   contentRoot: string; contentRootUpdatedAt: bigint;
+  visitorAuthAddress: string | null;
   onPeersChanged: () => void;
 }) {
   const [adding, setAdding] = useState(false);
   const [peerAddress, setPeerAddress] = useState("");
   const [peerLabel, setPeerLabel] = useState("");
+  const [copied, setCopied] = useState(false);
   const addWriter = useXidWrite();
   const revokeWriter = useXidWrite();
+
+  const visitorIsAlreadyPeer = visitorAuthAddress
+    ? peers.some((p) => p.address === visitorAuthAddress && p.active)
+    : false;
 
   useEffect(() => {
     if (addWriter.isSuccess) {
@@ -311,6 +319,46 @@ function EpixNetPeersSection({
           </button>
         )}
       </div>
+
+      {/* Visitor's EpixNet identity */}
+      {visitorAuthAddress && (
+        <div className="mb-4 p-3 bg-input rounded-md">
+          <div className="flex items-center justify-between">
+            <div className="min-w-0">
+              <p className="text-xs font-medium text-secondary mb-1">Your EpixNet Identity</p>
+              <p className="font-mono text-sm text-primary truncate">{visitorAuthAddress}</p>
+            </div>
+            <div className="flex items-center gap-2 ml-3 shrink-0">
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(visitorAuthAddress);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                className="px-3 py-1.5 text-xs bg-card border border-default hover:bg-hover rounded-md text-secondary transition-colors"
+              >
+                {copied ? "Copied!" : "Copy"}
+              </button>
+              {isOwner && !visitorIsAlreadyPeer && (
+                <button
+                  onClick={() => {
+                    setPeerAddress(visitorAuthAddress);
+                    setAdding(true);
+                  }}
+                  className="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 text-white rounded-md transition-colors"
+                >
+                  Add as Peer
+                </button>
+              )}
+              {visitorIsAlreadyPeer && (
+                <span className="text-xs bg-badge-green text-badge-green px-2 py-0.5 rounded-full font-medium">
+                  Authorized Peer
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Add peer form */}
       {adding && isOwner && (

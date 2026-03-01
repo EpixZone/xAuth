@@ -49,24 +49,24 @@
    "sha512": "f9177814af105b7329aa8afca2eecc69076ba6bd2c4b92267fbf31f34f110aa5",
    "size": 524
   },
-  "assets/add-BFKTbUZP.js": {
-   "sha512": "f02e184e937343945e99eb72bdf39452c9fc741c2c1f60515c7e26ff879bccb0",
+  "assets/add-Bqqn8ZG_.js": {
+   "sha512": "7fc3a1ece2885d19f476dc290344fad2959fc5abaab3929baa53b40d28394054",
    "size": 826
   },
-  "assets/all-wallets-BtnLdSGF.js": {
-   "sha512": "a1b27b66595ccea2115a957d541b419c2d33102c7451a0f2c197614b47215a41",
+  "assets/all-wallets-ljegp_J0.js": {
+   "sha512": "45f3f3065146f294b746bb75e0b303e29adfeffe7d7d4e6d327aaaa1ef42efe0",
    "size": 506
   },
   "assets/apechain-SX5YFU6N-q5qBv-mp.js": {
    "sha512": "1c50a7cb3aefa5a04ebbd2e552f3884855b41ed80c06b9c91027c71f39ebb25a",
    "size": 1459
   },
-  "assets/app-store-CH_Jk6_D.js": {
-   "sha512": "f3881df26084f9f6fd14032b8cd8f151e37d58e4c836c8187b322ee2d0f4c6c5",
+  "assets/app-store-IU4UNUvd.js": {
+   "sha512": "f0d88c8ce44991435b1d985f9f98df2a1e979ae597e0974389efcd168c5c7949",
    "size": 1255
   },
-  "assets/apple-DBqmxNVN.js": {
-   "sha512": "85ea63aafea8e93490d5d3a02ec042a1cdfa783751564c828ef94791a2844516",
+  "assets/apple-DdIJMay3.js": {
+   "sha512": "0042d4205bc7a517dfdb832218a3ce4b2eb80d4dcebe2ab461ac936d576dd215",
    "size": 1016
   },
   "assets/ar_AR-44JUQ6EW-BMX-am0v.js": {
@@ -77,24 +77,24 @@
    "sha512": "6e658fb74fa0e41ca34715dc548921a0b68b4479cfdf7ddb61de602c72269d43",
    "size": 2591
   },
-  "assets/arrow-bottom-CbZQtlsF.js": {
-   "sha512": "f9e650de6c8b2654db2dd30407669483c114417739d764285e2930fa191adabc",
+  "assets/arrow-bottom-DQyUqsfn.js": {
+   "sha512": "e73c6a01391befb882726582c21241d29245615635f65951c48f9df05c6a381e",
    "size": 471
   },
-  "assets/arrow-bottom-circle-a95_baBW.js": {
-   "sha512": "0f0fe9d0cf982846a0c25585101d42d30848122d5ea53f25c79827429cc60a7e",
+  "assets/arrow-bottom-circle-1raopesz.js": {
+   "sha512": "98f7f7064d90f514d7a19deea79293c1a6014f7ae181cd76d0eb91fd64737892",
    "size": 1186
   },
-  "assets/arrow-left-DjBVzXQC.js": {
-   "sha512": "6b1b9553c9670cc0a7f12889ead673db447f169820e7f999cd6f2a8c8323199b",
+  "assets/arrow-left-3B1W9bE2.js": {
+   "sha512": "f864a0a6257cfeed9094612716118dbe325bb1075f6035042f0c169c7923f3aa",
    "size": 471
   },
-  "assets/arrow-right-ei0ajM36.js": {
-   "sha512": "f81f9b1a8d318bc753d79dbbf6ea8360a05de6e3f2994f8a73124fda324d70df",
+  "assets/arrow-right-DnuGO5MS.js": {
+   "sha512": "15b7c3e548489d6c07c5a53805856c88c8accbd65d6cf1cf0ae90e05ee64d712",
    "size": 473
   },
-  "assets/arrow-top-CKXSjyT7.js": {
-   "sha512": "6d8e416b0c7e4681b5fca9f8479f776bbddf6f71332b56d1d9a1b39103ce1d9f",
+  "assets/arrow-top-Fbi2DvUv.js": {
+   "sha512": "f1b865c0413c67cf54dc2b5219cf53bf25ec4948d33aabeb0d7321da6d257c15",
    "size": 469
   },
   "assets/assets-Q6ZU7ZJ5-P8HioiAD.js": {
@@ -105,8 +105,8 @@
    "sha512": "a00c913535ac6f0e0f2e21fcd7f0b13d0310b1e972f0568739a8fc96f647e59b",
    "size": 1268
   },
-  "assets/bank-Doo7FzlS.js": {
-   "sha512": "5cc665b56ce4673f3d23b3019a1e446ff97bbcae63ee09eb6d85051acabc79ff",
+  "assets/bank-xHhejfhp.js": {
+   "sha512": "77157e4abc15bb917b2d56c979e9a0d8e6af7c18cbf3daabf6693c83e49c0391",
    "size": 999
   },
   "assets/base-OAXLRA4F-CoYTVIiL.js": {
@@ -117,8 +117,8 @@
    "sha512": "0d80c0048a1510bab812283d90d9b2ec185b9ba01dc491362b8ede0df01419a6",
    "size": 902
   },
-  "assets/basic-CMZqwMRT.js": {
-   "sha512": "d60fcb567a6ec33b9cd316298e611e934bbf29cac6fd1c59ff6dce1f552e8812",
+  "assets/basic-BN8Qpx9V.js": {
+   "sha512": "34d96be385677bce27ef740277066a063cf3294da39c03d8dc504202a5746fe1",
    "size": 144364
   },
   "assets/berachain-NJECWIVC-DumxnFvf.js": {
@@ -129,77 +129,81 @@
    "sha512": "c98b233589076bbc1f486a12e90b601bbebecb621a8e8c183cb58efea00b6383",
    "size": 1670
   },
-  "assets/browser-EOn4WJYo.js": {
-   "sha512": "291f8ac3d00031c7c11a1a175e0fb431eaf311b4d075b546cc57ecd062888495",
+  "assets/browser-CWn4YjKz.js": {
+   "sha512": "4cf1cb8f4816ab214ddc8fb504f51bef5a3975c4ebf25bd98b1661d858b1bde3",
    "size": 1636
   },
   "assets/bsc-N647EYR2-B2nLKXWV.js": {
    "sha512": "a7cea1093514c77fe416fe790ca96e11709852d270f53e696d3f6c355e9df9a8",
    "size": 1587
   },
-  "assets/card-kesmhLmp.js": {
-   "sha512": "53f01a33c77ca101befa30c9b0d7c77b759bff50aa09ee703f8beaad9c362b02",
+  "assets/card-B0LfZP7i.js": {
+   "sha512": "2203487c7c9e2332395f6ad66c65d13afb62cd34538a8f1a77e820207317a32d",
    "size": 2648
   },
-  "assets/ccip-DoLqcHRe.js": {
-   "sha512": "006683d37e2da807f32d29c552a2a9df14b84fd452e224ce5e7ae7f73703f125",
+  "assets/ccip-8WujAyCq.js": {
+   "sha512": "1bd8f8947f0f923479954ea54103ed000f1c2e8f37daa5db7297c6f3ea408d35",
    "size": 2669
   },
   "assets/celo-GEP4TUHG-CenIBYLU.js": {
    "sha512": "284a53d2a9e6da3843074ec938043689c2879b11ab1c71b7df32c1d263f943c3",
    "size": 510
   },
-  "assets/checkmark-BnEVGOak.js": {
-   "sha512": "050c1e7fbe2799a4c309dd0de577e14ab21d57b43d0ff1fd0d08bfd9d46006e0",
+  "assets/checkmark-D1hOW5r1.js": {
+   "sha512": "bdec6ce9ffe8cdc3fbdb06d4347ee4f0462654b453d824d72a1e66220233b4a2",
    "size": 762
   },
-  "assets/checkmark-bold-BcSfHlls.js": {
-   "sha512": "04feb28084198132a6f0124364c923677af9dcf2e20a7faac5d7235b2de2ce33",
+  "assets/checkmark-bold-CDCPp7bt.js": {
+   "sha512": "2364878d22b610e6d7c7ccb739b802db328bcd6b1e1df695805907e745d4952e",
    "size": 705
   },
-  "assets/chevron-bottom-BkxL5oof.js": {
-   "sha512": "012126a800409fe59372045a9927c43ba911ddabff97d6cbaaf30123649a6daf",
+  "assets/chevron-bottom-2XTKcVly.js": {
+   "sha512": "442164a3b63b975feff8b7d9d2769d52c3f9deb37bdbd26cdacb7ad904da5a24",
    "size": 457
   },
-  "assets/chevron-left-D_IRRlIa.js": {
-   "sha512": "a74a1b9d4b19e52e0685d3d25c694c8fd876903cc9ba78e3d3aeacbbad480ee6",
+  "assets/chevron-left-BwH58CMR.js": {
+   "sha512": "d916e6c9ff30fbdff6cd6b3d31651fa2f03e81ffd11226f6fd807396455b4dfc",
    "size": 454
   },
-  "assets/chevron-right-C28YFzBg.js": {
-   "sha512": "081cc29936485c1831f33d6ef6a78730549c1b7187cbcf34c9aa869fad5d0241",
+  "assets/chevron-right-xFZQtFqu.js": {
+   "sha512": "f9ec7bfd1615b6d42968b59d997452ce530e8f01b016b946d267becabd607bd8",
    "size": 457
   },
-  "assets/chevron-top-WYLP3YdV.js": {
-   "sha512": "049497eb753bc88bce490b0f93127220394caab255913fec748aaf9d9b6befab",
+  "assets/chevron-top-C8N07R65.js": {
+   "sha512": "71f2ec6041aa722bbb32b4c1f31d94517c39ca8429aaa5fa73e8bb899f82111e",
    "size": 455
   },
-  "assets/chrome-store-CMYL2Gss.js": {
-   "sha512": "dc623e2608c57e7ff16db306f85726761c36eb89a6e474ef9a9c9c8c7c1bc291",
+  "assets/chrome-store-BgGsEWFL.js": {
+   "sha512": "d7b81bfee7cee085582752d300e46d970e108a134216a5be4f37150c66cb37bf",
    "size": 2648
   },
-  "assets/clock-D1rcN1Vp.js": {
-   "sha512": "8053572701c459ac832daad9b0121250daa95c348e5f822d42a68b26245d6c15",
+  "assets/clock-CO7U15D8.js": {
+   "sha512": "afe6b65b0c8044464ba3cb6c4b0c29593de235b47eb05775e9d7a3e14166c6df",
    "size": 897
   },
-  "assets/close-DO9ANbqo.js": {
-   "sha512": "a96ccea90e779f4f0759cd18af631bcd047fda5728ac65f82845d384e7984294",
+  "assets/close-HDZKfL91.js": {
+   "sha512": "2f578386672af9f71c789e9dc719d116c6a72f53159d1ec58a730cadc8e34d68",
    "size": 498
   },
-  "assets/coinPlaceholder-BWfxI41F.js": {
-   "sha512": "c77f8f71627573670e277850af5b785685dd90755bdb1459774a9c1f3422976b",
+  "assets/coinPlaceholder-Yc5ppG_3.js": {
+   "sha512": "59501546698d1841cdf30e8e9daf25dcc442702ccccb17b0fec69ce420984f1a",
    "size": 560
   },
-  "assets/compass-BFZYb4xo.js": {
-   "sha512": "060b46137e25deb4bb0495a35313b1a33575a2c6b38c5d3f1109c85d1eeadbec",
+  "assets/compass-DV0ZXDV0.js": {
+   "sha512": "5928dfd2154ae29219ab87c74d69daa0dd7549fc9bfb76ad0739c44ff6cae3a5",
    "size": 580
   },
   "assets/connect-UA7M4XW6-IY3X6Bmr.js": {
    "sha512": "9277fb84836fbb642bd85275f9981fc18feb51fbc50fdfce3efd06da52101abf",
    "size": 3545
   },
-  "assets/copy-U7vT7Ssz.js": {
-   "sha512": "2b0ca47f309f8c19409ed12b7e5ce4e25d711172c38a8b1db652e517b958f4d3",
+  "assets/copy-BYxnFk0J.js": {
+   "sha512": "38ea8f8ee531fa5b2fd972a8c0dfc380f2d89268ac2a935bf04769faff58855f",
    "size": 3874
+  },
+  "assets/core-AZxa1HBF.js": {
+   "sha512": "374b93c89062148fdc1219c19a8395b788f5cd7c44fab49e4113ebd136d43f5c",
+   "size": 509254
   },
   "assets/core-C3tcj_lU.js": {
    "sha512": "bcfc12784d0e9e4758387d1ba8acf2583eeb2284d452296638bb3d3da6d119ea",
@@ -213,12 +217,12 @@
    "sha512": "331d226670b296b6c2a8e8714bf0f337a95a9f838a656e7c72c7312ba3512367",
    "size": 1520
   },
-  "assets/cursor-CstLv1Ra.js": {
-   "sha512": "9a81d8e18f7804fbbc319f130e3e20261da7953b2a6ad2bdc1648ed705a23590",
+  "assets/cursor-Dpc1cxhC.js": {
+   "sha512": "7b7cc0d244df7c5d293af7b3611ad245f8a4911a1b229f89330ba14f4930f584",
    "size": 316
   },
-  "assets/cursor-transparent-D7ImhJNH.js": {
-   "sha512": "7249b1a4af3ce1aa14d3e739b145518467400d4e87b252d3701462b734a5bccc",
+  "assets/cursor-transparent-DCEgt27X.js": {
+   "sha512": "e0ad15188ff9570b1c29aa23b566a0640d280c8d7b7e93742fb42ce9265e1db3",
    "size": 637
   },
   "assets/de_DE-PYAO5YD6-BWlqPWgO.js": {
@@ -229,16 +233,16 @@
    "sha512": "80c096959a8bd07df39e479125024ae1edb6076d1b34c644519b4ceb96ef012c",
    "size": 1486
   },
-  "assets/desktop-B3x0IiIB.js": {
-   "sha512": "5ba7cc1af89b4894589dab3ca26ba6c2ba8af81d15d0253cde57cb183a727c16",
+  "assets/desktop-Jbdn_lLj.js": {
+   "sha512": "67db590b7990b98715a47b74406c2a677fb2dba94157ee748740c6fcc95e4f78",
    "size": 1330
   },
-  "assets/disconnect-lrlne2LH.js": {
-   "sha512": "f7dcd8d5a03db5e932ed31399d2706e29a37bfc2b9e526721ef231a37656961a",
+  "assets/disconnect-CbpjndNB.js": {
+   "sha512": "60505ed64e70149bc7db9d1ecfe002e2f47a691ae7d266868b976ea5f36c4ccf",
    "size": 945
   },
-  "assets/discord-DgZJTYb0.js": {
-   "sha512": "8990c2afc44de97318e318eb147fa8a7ad5fe29f3f7462b5ae0d793f00705216",
+  "assets/discord-BJrqh-B-.js": {
+   "sha512": "3ad78316d5d926ec59a717a7ad3e09f3b6813b5fa095463479bccee6ea4e5e88",
    "size": 1358
   },
   "assets/es_419-HRGOJ6VT-D-qzxUM-.js": {
@@ -249,36 +253,36 @@
    "sha512": "b7b3f7b667306948fe78d1c158fb49156e30260c98add35301725cc2b12c4d66",
    "size": 1373
   },
-  "assets/etherscan-CRmbNHuM.js": {
-   "sha512": "e85c8281232804276562240619096e741e984cdaa1a7e72c820a27b59895a0f3",
+  "assets/etherscan-ERQwlg_1.js": {
+   "sha512": "65801323af856295aee1173e577dd3987f1a288a38bf7bff24ae27ad934299b9",
    "size": 761
   },
   "assets/events-DQ172AOg.js": {
    "sha512": "48f7a03a4fe8a76ff77d46b869eea9571d1f31e8fa0385d4d35b8c82a04f2ce0",
    "size": 6126
   },
-  "assets/exclamation-triangle-BZM-t16M.js": {
-   "sha512": "756bb344b61fd36de8aac82aa267aba3ef01ef2fefe8a96b63d520dcc2d84283",
+  "assets/exclamation-triangle-CrUspM4l.js": {
+   "sha512": "8a59d7a49ba916ca9a8eb1220108efc66ac525e7c8ef16ff8ca89e4af8c09525",
    "size": 2478
   },
-  "assets/extension-DTT5or86.js": {
-   "sha512": "59b7d7afe32e138b26408d71adb6fb519401e08e364e5ca928fdaa312c0f326d",
+  "assets/extension-D0b0PN7F.js": {
+   "sha512": "adbdcc983268359b61e7971d85072b5458b8bce8c2a68b2fef381cbd514eda30",
    "size": 1487
   },
-  "assets/external-link-wTYuj9dJ.js": {
-   "sha512": "d944fb99d5001d274a1b8736f1875f7a8e19f06ebba1003d2d762741aa204836",
+  "assets/external-link-CclpBMoC.js": {
+   "sha512": "8af0eebca6e42722e9a263ad18c238d26624ca80827067eec82d8766a3b20fe1",
    "size": 456
   },
-  "assets/facebook-LKa0rzsC.js": {
-   "sha512": "8bba9b18a1f9e4c8cab4b3f10595dae9af39893c55b7ca481d5a0a8f3e7d8787",
+  "assets/facebook-DL5Ifll_.js": {
+   "sha512": "0d3f6900e3ec5231bf5916008551d5b24ea89267f47b8f2193096d85145bdc51",
    "size": 1291
   },
-  "assets/farcaster-D935ESHv.js": {
-   "sha512": "ffb6efd832e708957ec9a539b1fddd6afe2737e7aa6170fcaebd3066618efc6e",
+  "assets/farcaster-CjUQo_bq.js": {
+   "sha512": "4bb7030365fe727ae145632e081c1e37bb2959063f6ab381c0ac57ce54bfda23",
    "size": 1073
   },
-  "assets/filters-eahnIazP.js": {
-   "sha512": "f560e2c17688556fea58f862ff899f722f79e32427ea0badf1f6a4978d6e4174",
+  "assets/filters-CCn99lCm.js": {
+   "sha512": "3748b7c04ba668035eb29321351475edc1ffa7700254d65e26d58bee4a034a47",
    "size": 507
   },
   "assets/flow-5FQJFCTK-CUie2reO.js": {
@@ -289,16 +293,16 @@
    "sha512": "fe4eca8e123fc8fd53e1191e3cbfa56a6c6b454b3c3c4f2cc0fd905c9087b938",
    "size": 66055
   },
-  "assets/github-CYNK71Z4.js": {
-   "sha512": "a6e2419bc8714c4aba19964f34b5fd05ea41958325b763414be0793b2206aae7",
+  "assets/github-DoI7SBj1.js": {
+   "sha512": "6b840de75510809dd609dd23a2f5f59d5aa18fb291c7aa244b635644bffa6785",
    "size": 1187
   },
   "assets/gnosis-37ZC4RBL-B137OtHZ.js": {
    "sha512": "9898045ed750fbd2c3a336f0f9c9ec6b9b5f8511857f3a6fa91964e3a29d4ae5",
    "size": 1796
   },
-  "assets/google-D-LeVNmN.js": {
-   "sha512": "c0a1fbe8b251c7be1f81ce8e67d57f5ac708c417f1095bd20a5347b17829dd01",
+  "assets/google-BGhPorgB.js": {
+   "sha512": "bade247fa95b47c33b111b71b9a744a7aabca2b9e77bed66561fbaaafbc484d9",
    "size": 869
   },
   "assets/gravity-J5YQHTYH-Bj6B0uod.js": {
@@ -309,8 +313,8 @@
    "sha512": "88db30628de44b8841e8735faf9d85077e2cf35f8242e01de57efbfee4e816cf",
    "size": 4200
   },
-  "assets/help-circle-R75kD-Im.js": {
-   "sha512": "84676e0cfeb514b8095cbd17cd2b5d2837d446b244c8618c0f839bd575ea20b3",
+  "assets/help-circle-vQWZoaVr.js": {
+   "sha512": "21ce2e5176659c72c10e5dcf9af486e639d329617cc7e14c8a6880a7ba3684e4",
    "size": 770
   },
   "assets/hi_IN-XSKAA3MF-C3QUpWyP.js": {
@@ -321,29 +325,41 @@
    "sha512": "4525c93d14398fad80846bf51313ecbda09bae3f90c9dfd9e1a96304f6b45631",
    "size": 725
   },
-  "assets/id-DrlY8S6O.js": {
-   "sha512": "23b8ea1437597bf5571f5698cfe651a615e69fef92f81810f51ef2dd19f829f5",
+  "assets/id-DoldY8p5.js": {
+   "sha512": "323d2c6aa7a7f0e02e031a4633648d42d99a763a7140cfb703f7809725ef89d2",
    "size": 1805
   },
   "assets/id_ID-KUOB4UAL-K9y-nRWm.js": {
    "sha512": "c38b104c87013c7d079db2c3833496e418e9e9f96c4a8f062b20e090de194261",
    "size": 58818
   },
-  "assets/image-Br3zw6_c.js": {
-   "sha512": "1af2fe7b59ef26e010d194b702c0788d5777433ac3c5b2fec49a643e6ab33313",
+  "assets/image-DxnX5xkQ.js": {
+   "sha512": "bb578a508b86d2fb62a6ecdfb470cf1c11cc6e15bb77b8eb96f4dd36aaf69fbc",
    "size": 3550
+  },
+  "assets/index-3mkctIHR.js": {
+   "sha512": "1bd2ea0462c84f994a7b4a8ccad0786a3f7f487fb276f3e813455771b0b29262",
+   "size": 9389
+  },
+  "assets/index-9ErH1ZY1.css": {
+   "sha512": "0577d853a9bc4c30b2139e8e4208d9b86079f369c5cc58f3ed3a132302b7a29a",
+   "size": 43156
   },
   "assets/index-BqSKcfxc.js": {
    "sha512": "8dc97f166615563d67ac071b09091887e313d7e1fb90d2a896d7a5b692ebee44",
    "size": 312193
   },
-  "assets/index-CRVEuLlZ.js": {
-   "sha512": "df535477af329995b86ae332a219017ec741d51fd1ba770d6dcc0ffb4612d62e",
-   "size": 39715
+  "assets/index-CMzAHeCW.js": {
+   "sha512": "3de7ff5a207374991d98ec57344675d348e2f7060772fef3a449568a412df727",
+   "size": 312193
   },
   "assets/index-DX4AUmVm.js": {
    "sha512": "101e1d60a5bcd1ecbd36bcc24da3fa48538b9f16208913bd1cd00fca4a65ee94",
    "size": 901948
+  },
+  "assets/index-De5m6NK0.js": {
+   "sha512": "d94a98ec3a27844667616a4f55c924322a441daeca05999f9067268c609c7693",
+   "size": 580984
   },
   "assets/index-DiqSxVjn.css": {
    "sha512": "9be5738a6bde78b2a597d4e704a266538573616c6044986ca941ee602e3cca27",
@@ -353,9 +369,9 @@
    "sha512": "ab07562e97f38e6c8ef38196d150471aad737500f65c3ffbacfc183ee8022212",
    "size": 9389
   },
-  "assets/index-P2cGaENI.js": {
-   "sha512": "b1a3832f80693e703edac5607c86b2981fe469cb7d354f7cc5d0e04adbc5c556",
-   "size": 580984
+  "assets/index-jwAkVsgP.js": {
+   "sha512": "ae319b5e8dc7d11be59c1c148f0c2f46407ace0ebe13a508417dfefa596b5985",
+   "size": 39715
   },
   "assets/index-kzlEvkEN.js": {
    "sha512": "4a216db38611838b366cdb68d915c23d503ba5a8f1184bbadc79fede66208ba2",
@@ -365,16 +381,24 @@
    "sha512": "233ec8b45b8d71208695440dd58a6b0d61eb730787862e46d6a1583c7e571516",
    "size": 948
   },
+  "assets/index-npkcIK8l.js": {
+   "sha512": "d8758382cc2fe64d231fef35cc426704c77e57ce6be01314221724c7b1e771e4",
+   "size": 903261
+  },
   "assets/index.es-CW68db6P.js": {
    "sha512": "9425f55e914bbbc84ab4904fbe9c18eead6b94b54d7531990cb7aebdf5f45fec",
    "size": 416943
   },
-  "assets/info-Dq4Vh_qs.js": {
-   "sha512": "33991162b4f8e61a183595991c034bf97b8c7843a0aefc1a36602f429cfe1cc7",
+  "assets/index.es-DqueOiVD.js": {
+   "sha512": "146731f548f3bebd40be504d96d07b4fdb2a80a379e54d82e3c0f6a8f15a51c9",
+   "size": 416943
+  },
+  "assets/info-DsTM8b2Y.js": {
+   "sha512": "2e00df9abadeede87b12442d7af146dde870731d37f35efffac0eb4546f3cfb7",
    "size": 2320
   },
-  "assets/info-circle-B6HemnlZ.js": {
-   "sha512": "6525d1f80cd6eb24c352fea753b8d3c149eff8bc07fb13196479537e4b0f1852",
+  "assets/info-circle-Bevoyd1C.js": {
+   "sha512": "975233d51c8daa9143e0ade5259223f714f9a59c25a6b1a4ca321e434f1a8daa",
    "size": 531
   },
   "assets/ink-FZMYZWHG-62p-5IK5.js": {
@@ -393,8 +417,8 @@
    "sha512": "35cd837d91757818ab3dadeb7d9b6b36cdb165498794e5b3578b5757c6ddbd19",
    "size": 63976
   },
-  "assets/lightbulb-DbGlG-hE.js": {
-   "sha512": "e8831a80dcf69046fcdabb489e4cff97ff1649f0bf781fa6c67df1b3bb21e1cc",
+  "assets/lightbulb-D628P7fk.js": {
+   "sha512": "7bed1b6809f3e482826fc913035afa30f625067452e4aa7ff743212fe92122f5",
    "size": 2772
   },
   "assets/linea-QRMVQ5DY-DuI3vv0d.js": {
@@ -405,8 +429,8 @@
    "sha512": "fdecb6cdd43226b57fa759a6a88fc4c2506b38d4e7ed7ca28edb702c0a20b8e0",
    "size": 11995
   },
-  "assets/mail-ZmP4ADyz.js": {
-   "sha512": "9ed95d360022d66664920c4c42736a8a4c994ebcfafa64f0261821e9158002db",
+  "assets/mail-Ct3RM2s0.js": {
+   "sha512": "8d06eb9c74905d005c5bd662224c88316e361f3e43f014fa48e8d2b1308052aa",
    "size": 1263
   },
   "assets/manta-SI27YFEJ-CpVOKa06.js": {
@@ -425,44 +449,48 @@
    "sha512": "c76c006cce369589113ab6408263c7681253857a7791e9d00b1a4caa160deb1e",
    "size": 557746
   },
-  "assets/mobile-DMB3Xhe9.js": {
-   "sha512": "0bf56d6e420cf925bbcddbefa7daf0f8fd137077fd0abf82ee6216d4b269dab0",
+  "assets/metamask-sdk-dA3yODtv.js": {
+   "sha512": "6d4d0045fb25d31c1aaa13324c00dc779030eb59da0ce0bc7f94ec385cfa7616",
+   "size": 557746
+  },
+  "assets/mobile-Lx-05WJI.js": {
+   "sha512": "86c719a4b4dbfabda25740c69dc2bce757167584ea9d4353e838a846cb5a6416",
    "size": 651
   },
   "assets/monad-4KWC6TSS-DVXSkpiz.js": {
    "sha512": "701a9d3a3114e344a02e5a9371d9fa32865f78b80f0037b63696e4114bc16ce4",
    "size": 739
   },
-  "assets/more-DF3cpwgz.js": {
-   "sha512": "da87c4c633404f4b25bba71d68fe8b9b2810872b5c531e8ca6c11112514fabc7",
+  "assets/more-CQTGHTqm.js": {
+   "sha512": "592fb36ed230d61a4e76940fde44d69542f3a66a89cb680f820a5ffc1c20f516",
    "size": 547
   },
   "assets/ms_MY-6VZW6Q3Z-BtFD07hR.js": {
    "sha512": "ea143dda17a6a47c635594e3779cd53ee47f3884dabc94217c0eabb89c1e6590",
    "size": 59650
   },
-  "assets/network-placeholder-DpELZ8PF.js": {
-   "sha512": "7a56012c93eb192adb57b51d7fce584087ea752ee84b61a38e458d71d2fd14ef",
+  "assets/network-placeholder-CRbg7lI8.js": {
+   "sha512": "9e91ad639067d8e5f1c200551de6aeff7fb6cb8f7f24b2b60a47f3b95b46b01b",
    "size": 1711
   },
-  "assets/nftPlaceholder-HLBEv1Yd.js": {
-   "sha512": "a772228141439933074cb5586b053766cd91a95ab3f7781883dbde48ed18a698",
+  "assets/nftPlaceholder-dfNk9ZMW.js": {
+   "sha512": "b56fa3bc45cb1ffd68955e8f4caf386519f0f353bb9891224afb0b1cf98b8130",
    "size": 1808
   },
-  "assets/off-CjiSp2M6.js": {
-   "sha512": "be8bbe26860f45046320ee357bdc55102f6b04e408812172ae29a79633ecc915",
+  "assets/off-DkTru8n5.js": {
+   "sha512": "c7ff9757998ae7d5a59e5c3b6b56c52a4982c77275e679a6a9fba753ce765fe3",
    "size": 491
   },
   "assets/optimism-HAF2GUT7-ec6Nqxs9.js": {
    "sha512": "d88ecadb9d459c3a6994d19ff95f38059b66b9e72b6ad38c8aaaac62f3c50391",
    "size": 728
   },
-  "assets/play-store-CV2cgPAg.js": {
-   "sha512": "9107e6279cbb348191a7c92ad424fd94e59595142378e1828e47e2c34993896c",
+  "assets/play-store-5ifKEXyx.js": {
+   "sha512": "957424787c5b32a6a385824aa121a7ac88982504f76399b58938abcb39bfe3cd",
    "size": 1064
   },
-  "assets/plus-B9mTmf7A.js": {
-   "sha512": "939160ffd93781af0e12704e42487fbd9e0da3aedde4d1efa72d55b971562aa0",
+  "assets/plus-B4uYFFD2.js": {
+   "sha512": "257360eea9d92a38f83feee9fcbbf617ec8864b912fec1c4261f8b9fe23e09f6",
    "size": 821
   },
   "assets/polygon-WW6ZI7PM-DXlmm4L1.js": {
@@ -473,28 +501,28 @@
    "sha512": "dcb857e012fbba99ccf6a9bd5937c0ee3886de98394309441dba1e8a8a55d3b4",
    "size": 59959
   },
-  "assets/qr-code-DjadTex7.js": {
-   "sha512": "7bdfd382b03d325863dd3906765cc413bfa237645ef3c9fff43a4d6e8080fc9d",
+  "assets/qr-code-WsUTwiZ9.js": {
+   "sha512": "24a01575ec82dec7da00e1d37db9632095e748dc77d5094d13f376fd6423bb17",
    "size": 1573
   },
   "assets/rainbowWallet-O26YNBMX-DUhYus-9.js": {
    "sha512": "98b7aef39266034b588d6dc868c35b306db9581da09d03c35fb651726fa05187",
    "size": 5120
   },
-  "assets/recycle-horizontal-BKSHXDci.js": {
-   "sha512": "dec71bf782b93199e0e51788d0429ea55fe2afc383a8e27c447bc4e3b0ca8b85",
+  "assets/recycle-horizontal-BXz7u69T.js": {
+   "sha512": "4fcb73b98d97c2c491aa70c520b779e6a2a27d2bdc6fcdc48911316b9d32f390",
    "size": 1402
   },
-  "assets/refresh-Cd0whfTz.js": {
-   "sha512": "006a7be6b4efaf170ce12c316990d08f1b2bd8a731531ccabdde2491e9c8da97",
+  "assets/refresh-CS2UhWGV.js": {
+   "sha512": "f580f8b3f65857c49573bbafb26e9ff9e0a4db22bd8f668f3d980433b315606b",
    "size": 547
   },
   "assets/refresh-S4T5V5GX-CwqIaaxK.js": {
    "sha512": "225ee84045e914cb1a0c710582ac1f6c0c5483dfae4ac652922ba6b349c8d527",
    "size": 3004
   },
-  "assets/reown-logo-MzSfYqrC.js": {
-   "sha512": "67d73107679f858fadec90cdc157275ac602f1d88c1f4ddfcda4e2ffc5fa1f35",
+  "assets/reown-logo-CdXxSnZM.js": {
+   "sha512": "a2b8679e46a2e8882ce16bfbcd35502c371e4961cfac6ecd7b16b37f0f2a5b68",
    "size": 2661
   },
   "assets/ronin-EMCPYXZT-N-QBHZdV.js": {
@@ -521,20 +549,20 @@
    "sha512": "2e4e30eb897381c56df6503331956bd46cb31ee8377025fb489e20b68cb6e5a4",
    "size": 2632
   },
-  "assets/search-sl672HQg.js": {
-   "sha512": "e1ef87872fc6ff0f26b44e6b9f505899c3a787c2f4105f713a52d5d23e74232a",
+  "assets/search-C1XW86c4.js": {
+   "sha512": "49d77323cca699cc6d61ba412588b1e952c7211785bc96ab8e8079326adc8244",
    "size": 495
   },
-  "assets/secp256k1-D2TS2Ef2.js": {
-   "sha512": "eb788ea2fc5eb7c72a738b7e1889b2a3ce80ccd77199002b129945013e9a60df",
-   "size": 31463
-  },
-  "assets/secp256k1-V6FIIlqQ.js": {
-   "sha512": "1d11ff408a30535914694d472c6c33d7fbfb6495a03bda2257ed7a9736a01dd4",
+  "assets/secp256k1-4zb8Iku9.js": {
+   "sha512": "332f050de327d63ab1e1ebaf54cc42335a1d116029ba4ec422ca0960d6bed368",
    "size": 31490
   },
-  "assets/send-C5jg4rSw.js": {
-   "sha512": "f12e8e39c0be9d6abc403210bd9292a0e98f6f85cf5b771c1434ac49e03871de",
+  "assets/secp256k1-D5EiyzWu.js": {
+   "sha512": "e13c7ff7577b64f758ea7b4705980826cb7646d36dc998b7c77846a74dd70f32",
+   "size": 31463
+  },
+  "assets/send-DmLuk-Yc.js": {
+   "sha512": "46de19aed83b8446ea1d2fc88a405de7f1690cf972be78ce9a7272f39b73af27",
    "size": 2481
   },
   "assets/sign-A7IJEUT5-CGsRnPrd.js": {
@@ -545,48 +573,48 @@
    "sha512": "98c18c805ccf13a2c129e198827cfe0eb71c055d921f7e5b3e22d6f6bfbcbb28",
    "size": 988
   },
-  "assets/swapHorizontal-TRIvJ_LH.js": {
-   "sha512": "715d8b4d42570d27106cf7a56d3a245d5c157c299ef8d9ab7039d65835873888",
+  "assets/swapHorizontal-CUorm-f-.js": {
+   "sha512": "467ac99354bb1177b13ac81b76289c3664c5589b25f46e31a13dd71f3086d789",
    "size": 608
   },
-  "assets/swapHorizontalBold-C8yWWj-E.js": {
-   "sha512": "728c3575dad8b4a20009ffb3643e50d2179d49f854debb4cebb26f373d485aa8",
+  "assets/swapHorizontalBold-DoBtLoO7.js": {
+   "sha512": "a7f528ed74eed5445fc3b7cbce812cd2bec5c6632e67e9de38cc2b61a9375166",
    "size": 1221
   },
-  "assets/swapHorizontalMedium-R9WEvdih.js": {
-   "sha512": "86c8065d4d25d2f985219ff96bd90251dd66e1ae5047c63b457824ce79be8329",
+  "assets/swapHorizontalMedium-BmzM3eUO.js": {
+   "sha512": "31651f49ee550cc4915105f24f6834f446210e21f9ad649911bfba65039b202f",
    "size": 1361
   },
-  "assets/swapHorizontalRoundedBold-CLO0NI0I.js": {
-   "sha512": "3db4a89768dcac58c18a945f95721be2afa427957a00a677a98cf9ad6bcc4c48",
+  "assets/swapHorizontalRoundedBold-BMcxO717.js": {
+   "sha512": "f2f7723525a5d36d97982679d629495a2276c71b0d88b1e00e5ac587f58d4686",
    "size": 1513
   },
-  "assets/swapVertical-9KZJgCKQ.js": {
-   "sha512": "f7100a1bde13c759dda6fe3a247c2313772ed7c67e0c5413e693abae44b5f2c4",
+  "assets/swapVertical-CDjzkeVy.js": {
+   "sha512": "843f051a2fbb6bf42509dd3a448d50a2a50f0eb7160ba0b0d1a708bfe6d16741",
    "size": 604
   },
-  "assets/telegram-CA1eudrX.js": {
-   "sha512": "1bbc4fb6ee5e995a80421c431149e6121a3d7c349016e713084be543e071c83f",
+  "assets/telegram-B2Hc3HXS.js": {
+   "sha512": "ea97e85eb84e8fd14199c030f594ece6d97dc868b5ff61aafe9026d99e788781",
    "size": 1509
   },
   "assets/th_TH-3ZQCKCQE-BcHUN2Q4.js": {
    "sha512": "5237afd033d783acc21dfddce168f443856b7d7bdbea52c90372eab42c458e89",
    "size": 104066
   },
-  "assets/three-dots-iXYUip3g.js": {
-   "sha512": "6a18d38231c1f8e47e6bf3ee5329d55e4fb581c66c05fc0f34b3abccfd452df5",
+  "assets/three-dots-ChGDnlXO.js": {
+   "sha512": "22b45a8d9ec0f8b674f346f09d6a2357a2543af6d24e29eb37649ccd5d8e6a54",
    "size": 896
   },
   "assets/tr_TR-QUPUGMUF-CwpF6ZFn.js": {
    "sha512": "4903d2468149e072cc5dc2003ea0bf2acacd5ab24a2e8145b31d91a99e6b47dd",
    "size": 61980
   },
-  "assets/twitch-BkyWv_R4.js": {
-   "sha512": "04fafe090736f45a1bbf8a07b155e3d067e3ba68f352421fb924b2e0eda57f9e",
+  "assets/twitch-nLqpbTe7.js": {
+   "sha512": "16a78f98469891cbdfd6419503fdbe7e44531d6c3361ab3ac33ddcce3652a82c",
    "size": 956
   },
-  "assets/twitterIcon-iZt3vjsJ.js": {
-   "sha512": "b63037e6bf545cf496105a20cbd7baaa699b3a7797e9c0c5e7986c174a90fb1a",
+  "assets/twitterIcon-DKzLeCZ4.js": {
+   "sha512": "86f5633df0ce898589aa2d60eb3429a56daff3c9cbd6c0230a1e2c80525947e0",
    "size": 641
   },
   "assets/uk_UA-SSN6SV5E-IlYYyRC6.js": {
@@ -597,44 +625,44 @@
    "sha512": "3dd0e4729e62452f7487db015c9e3e34750556ac1f0efb059e0cf15854e1583c",
    "size": 984
   },
-  "assets/verify-DXHl5fQO.js": {
-   "sha512": "7919458b70ca27b5b1ca6d0979d1e928c249384c9bca650582d8a44334c177a0",
+  "assets/verify-BDAlSnc2.js": {
+   "sha512": "f2710ff4b8ecb6235a914e89f7d30e95f42d018b0a3099b843ebcbf528d55943",
    "size": 1529
   },
-  "assets/verify-filled-CMf-TQai.js": {
-   "sha512": "b4e190a87de28bec4ff1b2c945a354f6e93d69973ca791a992590afb5bac4477",
+  "assets/verify-filled-6PSpHZg-.js": {
+   "sha512": "af1acde28015913dc1f8b63adb3d52cfc044bee9bd4b1c9f2ec5bf49736a8c7e",
    "size": 824
   },
   "assets/vi_VN-7BUVRNYY-CZ9S75qZ.js": {
    "sha512": "2ee14d3b5be58abeacd3dd7ecfd2c5fa73bacb15f16d8e0b37bb9cb6cf080286",
    "size": 67433
   },
-  "assets/w3m-modal-DMJY1Fve.js": {
-   "sha512": "27f02c8eb1bc627570ebedce6172c4b019e3353cc23022fcaa8729024ea440f9",
+  "assets/w3m-modal-BJwEm6Z8.js": {
+   "sha512": "0361e3904dc313f799c7e3673f965e06153bf292213d2e30a43b02762401771e",
    "size": 40113
   },
-  "assets/wallet-BhL9P0nm.js": {
-   "sha512": "e02680ac0f58c4a88b221c300446491af286eccf97d4876a418afccd9b9795ad",
+  "assets/wallet-CWZm2vcT.js": {
+   "sha512": "5a2b45c29525d128351d4bdf5a7221f474f40455684208129230fe1ec2b4d5b4",
    "size": 777
   },
-  "assets/wallet-placeholder-CKNDaRVo.js": {
-   "sha512": "b2c065f3edbef748527ff90a0241dcec0f38ccc864c1d1996900c31031af26fa",
+  "assets/wallet-placeholder-t73wIX74.js": {
+   "sha512": "6b430dd04a4d1152779c4562383a1caa47dd73fd2b2fb562fd493cf206fc3984",
    "size": 1321
   },
   "assets/walletConnectWallet-YHWKVTDY-D3lyiczV.js": {
    "sha512": "f057b9ccbabd042aabcc602f3b801bb22a17905c07263e13bb305676a6143a76",
    "size": 1877
   },
-  "assets/walletconnect-xPIV3vdO.js": {
-   "sha512": "a5fcae66718f56f44f1de320b959757a51483ffcb1afd74747b2980b4d05fdda",
+  "assets/walletconnect-DGwJEjqd.js": {
+   "sha512": "14af10b34e6c02fb2de172dceeb0cc8ccbb72ad807117057215ec65549816954",
    "size": 4117
   },
-  "assets/warning-circle-BpGSq7-M.js": {
-   "sha512": "8ff8ee6a71d497717ed2dff966f95a18f469f823dcf28b2469eb45a3b7fdc286",
+  "assets/warning-circle-TD2JOuVS.js": {
+   "sha512": "fbf41dd90d990257d77ed181d37ac842e5f52e8fa411a09169fe696f2e16bd83",
    "size": 554
   },
-  "assets/x-ChceP1vI.js": {
-   "sha512": "e5b48038ffb14a9616333c181992a6e2de67b76627f1c407efadf9edb5b1b69b",
+  "assets/x-DDnwkbUR.js": {
+   "sha512": "722761d8bb1e818f49635290dda2f1916f2ffee5f465368c553a7d722b46dc27",
    "size": 626
   },
   "assets/xID-BXOeLFpR.png": {
@@ -670,7 +698,7 @@
    "size": 2681
   },
   "index.html": {
-   "sha512": "3f1cdbe7e7b759f7e4104302356df61692e1f2cd0ed501adfc24fb6c3414f92d",
+   "sha512": "efd74c4ec79adb342e5989d6a31291f65934b9871292181e4fa5aef6ea0644f7",
    "size": 469
   },
   "xID.png": {
@@ -680,11 +708,11 @@
  },
  "ignore": "\\.git/.*|src/.*|public/.*|node_modules/.*|package\\.json|package-lock\\.json|vite\\.config\\.ts|tsconfig\\.json|tsconfig\\.app\\.json|tsconfig\\.node\\.json|tailwind\\.config\\.js|postcss\\.config\\.js|LICENSE|README\\.md|dist/.*",
  "inner_path": "content.json",
- "modified": 1772302649,
+ "modified": 1772345051,
  "optional": "data/certs_.*",
  "postmessage_nonce_security": true,
  "signers_sign": "HNfz8jlgYVbSefZNAg3nChgd6KcV2ez+iVDofUI9k5g4ZUAZjn2/RaSXsKHCye+JgGjXeLxJTZOXLS3aBlxQBHk=",
- "signs": {"epix1xauthduuyn63k6kj54jzgp4l8nnjlhrsyaku8c": "HLJ2kR5hSHKn887gPVJrf9OTyVF6vQq6dzBt5II5zf9iVd4Z5862JGLUm4ZisvUmxHUb0GX9dW4UQkfXPvfI7Qk="},
+ "signs": {"epix1xauthduuyn63k6kj54jzgp4l8nnjlhrsyaku8c": "HB7YAhXs+0wXzhmuoO9oAUzjUB1UfVAef9jHBhLZ95qlKyPA2/oxXeeIHNlBMs/Mpp6I0AF9fMAa8y7UgCWI97o="},
  "signs_required": 1,
  "title": "xID",
  "translate": []

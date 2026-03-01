@@ -24,6 +24,14 @@ export interface ServerInfo {
   [key: string]: unknown;
 }
 
+export interface SiteInfo {
+  auth_address: string;
+  cert_user_id: string | null;
+  address: string;
+  address_short: string;
+  [key: string]: unknown;
+}
+
 // ---------------------------------------------------------------------------
 // EpixFrame class
 // ---------------------------------------------------------------------------
@@ -70,6 +78,10 @@ class EpixFrame {
 
   getConfigList(): Promise<Record<string, ConfigItem>> {
     return this.cmd<Record<string, ConfigItem>>("configList");
+  }
+
+  getSiteInfo(): Promise<SiteInfo> {
+    return this.cmd<SiteInfo>("siteInfo");
   }
 
   // -- internals ------------------------------------------------------------
