@@ -19,8 +19,15 @@ import MyNamesPage from "./pages/MyNamesPage";
 import NameDetailPage from "./pages/NameDetailPage";
 import StatsPage from "./pages/StatsPage";
 import PricesPage from "./pages/PricesPage";
+import AddPeerPage from "./pages/AddPeerPage";
 
 const queryClient = new QueryClient();
+
+// Check real query string for addPeer param (forwarded by EpixNet wrapper).
+// This bypasses HashRouter since the wrapper doesn't reliably forward hash
+// fragments to the inner iframe.
+const realParams = new URLSearchParams(window.location.search);
+const isAddPeerMode = realParams.has("addPeer");
 
 function AppInner() {
   const { theme, rpcUrl, ready } = useEpixNet();
@@ -50,6 +57,20 @@ function AppInner() {
     );
   }
 
+  // When addPeer query param is present, render AddPeerPage directly
+  // without the sidebar/layout chrome.
+  if (isAddPeerMode) {
+    return (
+      <WagmiProvider config={wagmiConfig}>
+        <QueryClientProvider client={queryClient}>
+          <RainbowKitProvider theme={rkTheme}>
+            <AddPeerPage />
+          </RainbowKitProvider>
+        </QueryClientProvider>
+      </WagmiProvider>
+    );
+  }
+
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
@@ -66,6 +87,7 @@ function AppInner() {
                 />
                 <Route path="/prices" element={<PricesPage />} />
                 <Route path="/stats" element={<StatsPage />} />
+                <Route path="/add-peer" element={<AddPeerPage />} />
               </Routes>
             </Layout>
           </HashRouter>

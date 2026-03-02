@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useAccount } from "wagmi";
 import { isAddress } from "viem";
 import {
@@ -23,6 +23,8 @@ interface DnsRecord {
 
 export default function NameDetailPage() {
   const { tld = DEFAULT_TLD, name = "" } = useParams<{ tld: string; name: string }>();
+  const [searchParams] = useSearchParams();
+  const addPeerParam = searchParams.get("addPeer");
   const { address } = useAccount();
   const { owner, isLoading: resolveLoading, refetch: refetchOwner } = useResolve(name, tld);
   const { avatar, bio, refetch: refetchProfile } = useProfile(name, tld);
@@ -116,6 +118,7 @@ export default function NameDetailPage() {
         contentRoot={root}
         contentRootUpdatedAt={updatedAt}
         visitorAuthAddress={authAddress}
+        addPeerParam={addPeerParam}
         onPeersChanged={() => { refetchPeers(); }}
       />
 
@@ -252,13 +255,14 @@ function ProfileSection({
 /* ── EpixNet Peers Section ────────────────────────────────────────── */
 
 function EpixNetPeersSection({
-  name, tld, isOwner, peers, peersLoading, contentRoot, contentRootUpdatedAt, visitorAuthAddress, onPeersChanged,
+  name, tld, isOwner, peers, peersLoading, contentRoot, contentRootUpdatedAt, visitorAuthAddress, addPeerParam, onPeersChanged,
 }: {
   name: string; tld: string; isOwner: boolean;
   peers: { address: string; label: string; addedAt: bigint; active: boolean; revokedAt: bigint }[];
   peersLoading: boolean;
   contentRoot: string; contentRootUpdatedAt: bigint;
   visitorAuthAddress: string | null;
+  addPeerParam: string | null;
   onPeersChanged: () => void;
 }) {
   const [adding, setAdding] = useState(false);
@@ -272,8 +276,20 @@ function EpixNetPeersSection({
     ? peers.some((p) => p.address === visitorAuthAddress && p.active)
     : false;
 
+  // Auto-open add peer form when ?addPeer= param is present
+  useEffect(() => {
+    if (addPeerParam && isOwner) {
+      setPeerAddress(addPeerParam);
+      setAdding(true);
+    }
+  }, [addPeerParam, isOwner]);
+
   useEffect(() => {
     if (addWriter.isSuccess) {
+      // Notify parent window (iframe overlay) that peer was added
+      if (addPeerParam) {
+        window.parent.postMessage({ type: "xid-peer-added", address: addPeerParam }, "*");
+      }
       setAdding(false);
       setPeerAddress("");
       setPeerLabel("");
