@@ -1,8 +1,9 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState, useRef, useCallback } from "react";
 import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { usePrimaryName, useXidWrite } from "../hooks/useXid";
 import { XID_ADDRESS, XID_ABI } from "../config/contract";
+import { epixFrame } from "../config/epixframe";
 
 export default function AddPeerPage() {
   // Read from the real query string (works both inside HashRouter and standalone).
@@ -14,6 +15,9 @@ export default function AddPeerPage() {
   const { address, isConnected } = useAccount();
   const { primaryName, primaryTld, isLoading: nameLoading } = usePrimaryName(address);
   const writer = useXidWrite();
+  const [peerStatus, setPeerStatus] = useState<"idle" | "polling" | "confirmed">("idle");
+  const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleAdd = () => {
     if (!primaryName || !peerAddress) return;
@@ -25,15 +29,59 @@ export default function AddPeerPage() {
     });
   };
 
-  useEffect(() => {
-    if (writer.isSuccess && returnTo) {
-      // Small delay so user sees success state
-      const timer = setTimeout(() => {
-        window.location.href = returnTo;
-      }, 1500);
-      return () => clearTimeout(timer);
+  const pollPeerResolution = useCallback(async () => {
+    if (!epixFrame.isEmbedded || !peerAddress) {
+      // Not inside EpixNet — just redirect after a short delay
+      if (returnTo) {
+        setTimeout(() => { window.location.href = returnTo; }, 1500);
+      }
+      return;
     }
-  }, [writer.isSuccess, returnTo]);
+
+    setPeerStatus("polling");
+
+    // Invalidate the EpixNet cache for this peer address
+    try {
+      await epixFrame.cmd("xidInvalidateCache", { peer_address: peerAddress });
+    } catch (_) { /* ignore */ }
+
+    // Poll xidResolve every 3 seconds until it returns a name
+    pollRef.current = setInterval(async () => {
+      try {
+        // Invalidate before each attempt so we don't get stale cached results
+        await epixFrame.cmd("xidInvalidateCache", { peer_address: peerAddress });
+        const result = await epixFrame.cmd<{ name?: string } | null>("xidResolve", { peer_address: peerAddress });
+        if (result && result.name) {
+          // Peer resolved — stop polling and redirect
+          if (pollRef.current) clearInterval(pollRef.current);
+          if (timeoutRef.current) clearTimeout(timeoutRef.current);
+          setPeerStatus("confirmed");
+          if (returnTo) {
+            setTimeout(() => { window.location.href = returnTo; }, 1000);
+          }
+        }
+      } catch (_) { /* ignore errors, keep polling */ }
+    }, 3000);
+
+    // Timeout after 60 seconds — redirect anyway
+    timeoutRef.current = setTimeout(() => {
+      if (pollRef.current) clearInterval(pollRef.current);
+      setPeerStatus("confirmed");
+      if (returnTo) {
+        window.location.href = returnTo;
+      }
+    }, 60000);
+  }, [peerAddress, returnTo]);
+
+  useEffect(() => {
+    if (writer.isSuccess && peerStatus === "idle") {
+      pollPeerResolution();
+    }
+    return () => {
+      if (pollRef.current) clearInterval(pollRef.current);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [writer.isSuccess, peerStatus, pollPeerResolution]);
 
   return (
     <div className="max-w-lg mx-auto mt-12 p-6">
@@ -74,7 +122,15 @@ export default function AddPeerPage() {
             <span className="font-mono text-sm">{peerAddress}</span>
             {" "}has been added to <strong>{primaryName}.{primaryTld}</strong>.
           </p>
-          {returnTo ? (
+          {returnTo && peerStatus === "polling" ? (
+            <div className="flex items-center gap-2 mt-3">
+              <div
+                className="animate-spin rounded-full h-4 w-4 border-2 border-transparent"
+                style={{ borderTopColor: "var(--color-accent)" }}
+              />
+              <span className="text-secondary">Waiting for peer confirmation...</span>
+            </div>
+          ) : returnTo && peerStatus === "confirmed" ? (
             <p className="text-secondary mt-2">Redirecting back...</p>
           ) : null}
         </div>
