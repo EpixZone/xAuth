@@ -1,7 +1,9 @@
+import { useState, useEffect, useCallback } from "react";
 import { useReadContract, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { formatEther } from "viem";
 import { XID_ADDRESS, XID_ABI, ZERO_ADDRESS } from "../config/contract";
-import { DEFAULT_TLD } from "../config/chain";
+import { DEFAULT_TLD, REST_API } from "../config/chain";
+import { evmToBech32 } from "../config/bech32";
 
 export function useResolve(name: string, tld: string = DEFAULT_TLD) {
   const { data, isLoading, error, refetch } = useReadContract({
@@ -148,6 +150,44 @@ export function useContentRoot(name: string, tld: string = DEFAULT_TLD) {
     updatedAt: result?.[1] || BigInt(0),
     isLoading,
   };
+}
+
+export interface NameEntry {
+  name: string;
+  tld: string;
+  owner: string;
+}
+
+export function useUserNames(addr: `0x${string}` | undefined, restApi?: string) {
+  const [names, setNames] = useState<NameEntry[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const fetchNames = useCallback(async () => {
+    if (!addr) return;
+    setIsLoading(true);
+    setError(null);
+    try {
+      const bech32Addr = evmToBech32(addr);
+      const base = restApi || REST_API;
+      const res = await fetch(
+        `${base}/xid/v1/names/${bech32Addr}?pagination.limit=100&pagination.count_total=true`
+      );
+      if (!res.ok) throw new Error("Failed to fetch names");
+      const data = await res.json();
+      setNames(data.names || []);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Failed to fetch names");
+    } finally {
+      setIsLoading(false);
+    }
+  }, [addr, restApi]);
+
+  useEffect(() => {
+    fetchNames();
+  }, [fetchNames]);
+
+  return { names, isLoading, error, refetch: fetchNames };
 }
 
 export function useXidWrite() {
