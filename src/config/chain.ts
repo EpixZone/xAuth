@@ -12,7 +12,7 @@ export function createEpixChain(rpcUrl?: string) {
       default: { http: [rpcUrl || DEFAULT_RPC] },
     },
     blockExplorers: {
-      default: { name: "EpixScan", url: "http://testscan.epix.zone" },
+      default: { name: "EpixScan", url: "/epix1epxrwflutk4j2saxuy84wvv52tdepuep8yqcqk" },
     },
     testnet: true,
   });
@@ -23,3 +23,7 @@ export const epixTestnet = createEpixChain();
 
 export const REST_API = "https://api.testnet.epix.zone";
 export const DEFAULT_TLD = "epix";
+
+const EXPLORER_SITE = "/epix1epxrwflutk4j2saxuy84wvv52tdepuep8yqcqk";
+export const explorerTxUrl = (hash: string) => `${EXPLORER_SITE}?tx=${hash}`;
+export const explorerAccountUrl = (address: string) => `${EXPLORER_SITE}?account=${address}`;

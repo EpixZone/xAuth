@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAccount } from "wagmi";
-import { epixTestnet } from "../config/chain";
+import { explorerTxUrl } from "../config/chain";
 import { useRestApi } from "../contexts/EpixNetContext";
 import { evmToBech32 } from "../config/bech32";
 import { usePrimaryName, useXidWrite } from "../hooks/useXid";
@@ -162,7 +162,7 @@ export default function MyNamesPage() {
                 <p className="text-sm text-secondary">
                   Set Primary tx:{" "}
                   <a
-                    href={`${epixTestnet.blockExplorers.default.url}/tx/${setPrimaryWriter.hash}`}
+                    href={explorerTxUrl(setPrimaryWriter.hash)}
                     target="_blank"
                     rel="noreferrer"
                     className="text-accent font-mono"

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAccount } from "wagmi";
 import { useResolve, useRegistrationFee, useXidWrite } from "../hooks/useXid";
 import { XID_ADDRESS, XID_ABI } from "../config/contract";
-import { DEFAULT_TLD, epixTestnet } from "../config/chain";
+import { DEFAULT_TLD, explorerTxUrl } from "../config/chain";
 import xidLogo from "../../public/xID.png";
 
 export default function RegisterPage() {
@@ -103,7 +103,7 @@ export default function RegisterPage() {
           <div className="bg-success rounded-md p-3 text-success text-sm">
             Name registered successfully!{" "}
             <a
-              href={`${epixTestnet.blockExplorers.default.url}/tx/${hash}`}
+              href={explorerTxUrl(hash)}
               target="_blank"
               rel="noreferrer"
               className="underline"

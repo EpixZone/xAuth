@@ -12,7 +12,7 @@ import {
   extractContractError,
 } from "../hooks/useXid";
 import { XID_ADDRESS, XID_ABI, DNS_RECORD_TYPES } from "../config/contract";
-import { DEFAULT_TLD, epixTestnet } from "../config/chain";
+import { DEFAULT_TLD, explorerTxUrl } from "../config/chain";
 import { useRestApi, useAuthAddress } from "../contexts/EpixNetContext";
 import { truncateAddress } from "../config/bech32";
 
@@ -217,7 +217,7 @@ function ProfileSection({
             <p className="text-sm text-secondary">
               Tx:{" "}
               <a
-                href={`${epixTestnet.blockExplorers.default.url}/tx/${hash}`}
+                href={explorerTxUrl(hash)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent font-mono"
@@ -413,7 +413,7 @@ function LinkedIdentitiesSection({
             <p className="text-sm text-secondary">
               Tx:{" "}
               <a
-                href={`${epixTestnet.blockExplorers.default.url}/tx/${addWriter.hash}`}
+                href={explorerTxUrl(addWriter.hash)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent font-mono"
@@ -494,7 +494,7 @@ function LinkedIdentitiesSection({
             <p className="text-sm text-secondary">
               Revoke tx:{" "}
               <a
-                href={`${epixTestnet.blockExplorers.default.url}/tx/${revokeWriter.hash}`}
+                href={explorerTxUrl(revokeWriter.hash)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent font-mono"
@@ -659,7 +659,7 @@ function DNSRecordsSection({
             <p className="text-sm text-secondary">
               Tx:{" "}
               <a
-                href={`${epixTestnet.blockExplorers.default.url}/tx/${setWriter.hash}`}
+                href={explorerTxUrl(setWriter.hash)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent font-mono"
@@ -708,7 +708,7 @@ function DNSRecordsSection({
             <p className="text-sm text-secondary">
               Delete tx:{" "}
               <a
-                href={`${epixTestnet.blockExplorers.default.url}/tx/${delWriter.hash}`}
+                href={explorerTxUrl(delWriter.hash)}
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent font-mono"
@@ -812,7 +812,7 @@ function TransferForm({
           <div className="p-3 rounded-md bg-input border border-default">
             <p className="text-xs text-secondary mb-1">Transaction</p>
             <a
-              href={`${epixTestnet.blockExplorers.default.url}/tx/${hash}`}
+              href={explorerTxUrl(hash)}
               target="_blank"
               rel="noreferrer"
               className="text-accent hover:opacity-80 text-xs font-mono break-all"

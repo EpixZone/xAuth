@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { formatEther } from "viem";
 import { useRestApi } from "../contexts/EpixNetContext";
 const XID_MODULE_BECH32 = "epix1gs90m79353yufdyqrl93yklqgcg0s6cfdcjv7h";
-const BURN_EXPLORER_URL = `https://testnet.epix.zone/epix/account/${XID_MODULE_BECH32}`;
+const BURN_EXPLORER_URL = `/epix1epxrwflutk4j2saxuy84wvv52tdepuep8yqcqk?account=${XID_MODULE_BECH32}`;
 
 interface TldStat {
   tld: string;
